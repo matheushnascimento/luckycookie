@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  font-size: 62.5%;
+
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #34355B;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 1.4rem;
+
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  color: #34355B;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 2.6rem;
+
+}
+
+.screen1 img {
+  height: 20rem;
+}
+
+.screen1 img:hover {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+.screen1,
+.screen2 {
+  text-align: center;
+
+  width: 42.8rem;
+  height: 42.2rem;
+
+  background: white;
+
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.screen2 {
+  height: 56.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.7rem;
+
+
+}
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+  background: #E4EDF1;
+  font-family: 'Dancing Script', cursive;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+
+  -webkit-animation: scaleInAndMove 1s ease-in;
+  animation: scaleInAndMove 1s ease-in-out;
+
+}
+
+.screen2 img {
+  height: 30rem;
+
+  padding: 4.3rem;
+}
+
+.screen2 button {
+  width: 17.4rem;
+  height: 5.2rem;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 1.0rem;
+
+  padding: 1.6rem;
+
+  border: none;
+  border-radius: .4rem;
+  background: #FF9500;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hide {
+  display: none;
+}
+
+/* Animações */
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes scaleInAndMove {
+  0% {
+    transform: scale(0) translateY(1000px);
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scaleInAndMove {
+  0% {
+    transform: translateY(15rem) scale(0);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #190361;
+  }
+
+  100% {
+    background: #b0f;
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #190361;
+  }
+
+  100% {
+    background: #b0f;
+  }
+}
